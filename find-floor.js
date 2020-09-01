@@ -7,10 +7,7 @@ function findFloor(arr, val) {
 function binarySearch(arr, val, first = 0, last = arr.length - 1) {
   let middle = Math.floor((first + last) / 2);
   if (first <= last) {
-    if (
-      arr[middle] == val ||
-      (arr[middle] == arr[arr.length - 1] && arr[length - 1] <= val)
-    ) {
+    if (arr[middle] == val || arr[arr.length - 1] <= val) {
       return arr[middle];
     }
     if (arr[middle] > val) {
